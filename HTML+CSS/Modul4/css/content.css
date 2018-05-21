@@ -1,45 +1,50 @@
 
-.content{
+.content {
     font-size: 0;
 }
-.img{
+
+.img {
     width: 350px;
     height: 260px;
 }
-.news{
+
+.news {
     display: block;
     width: 350px;
     margin-right: 30px;
     font-family: 'Open Sans', sans-serif;
     float: left;
 }
-.news:last-child{
+
+.news:last-child {
     margin-right: 0;
 }
-.text1{
+
+.text1 {
     font-size: 18px;
     color: #555252;
     line-height: 25px;
     margin-top: 10px;
-
+    margin-bottom: 20px;
 }
-.text2{
+
+.text2 {
     font-size: 14px;
     line-height: 25px;
     color: #555252;
     margin-bottom: 10px;
 }
-.text1:after{
+
+.text1:after {
     content: '';
     display: block;
     width: 135px;
     height: 2px;
     background-color: #1abc9c;
     margin-top: 10px;
-    margin-bottom: 20px;
 }
-.button{
-    float: left;
+
+.button {
     background-color: #4ec6ab;
     border-radius: 4px;
     border: none;

@@ -1,3 +1,7 @@
+.header {
+    margin-bottom: 95px;
+}
+
 .logo {
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
@@ -5,27 +9,29 @@
     color: black;
     text-decoration: none;
     float: left;
-    margin-bottom: 105px;
 }
 
 .logo:first-letter {
     display: block;
     color: #42A885;
 }
-.menu{
+
+.menu {
     list-style: none;
     float: right;
-    padding: 10px 0 5px;
     font-family: 'Roboto', sans-serif;
 }
 
 .item {
     display: block;
     float: left;
+    margin-right: 30px;
 }
-.a1{
+
+.item:last-child {
     margin-right: 0;
 }
-.a:hover{
-    background-color: #1abc9c;
+
+.a:hover {
+    color: #1abc9c;
 }
