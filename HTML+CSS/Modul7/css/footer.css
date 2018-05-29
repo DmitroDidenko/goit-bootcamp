@@ -1,0 +1,57 @@
+.footer-wrapper{
+    background-image: url(../img/Map.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head-footer{
+    font-size: 42px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+.footer{
+    padding: 114px 0;
+}
+.input{
+    flex-basis: 20%;
+    border-radius: 4px;
+    border: none;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+.big-input{
+    display: flex;
+    flex-basis: 48.5%;
+    border-radius: 4px;
+    border: none;
+    text-transform: uppercase;
+    padding: 0 0 8rem 1rem;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 48.5%;
+    justify-content: space-between;
+}
+.submit{
+    display: block;
+    margin: auto;
+    flex-basis: 25%;
+    padding: 22px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #fed136;
+    border-radius: 4px;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.form{
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 320px;
+}
