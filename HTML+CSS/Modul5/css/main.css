@@ -1,8 +1,7 @@
-.section{
-    width: 1110px;
-    margin: auto;
+.section {
     padding-bottom: 100px;
 }
+
 .title {
     text-align: center;
     text-transform: uppercase;
@@ -21,23 +20,26 @@
     background-color: #1abc9c;
     margin: 20px auto 0;
 }
-.card{
+
+.card {
     position: relative;
     width: 255px;
-    height: 320px;
     margin: auto;
     float: left;
     margin-right: 30px;
 }
-.card:last-child{
+
+.card:last-child {
     margin-right: 0;
 }
-.img{
+
+.img {
     width: 255px;
     height: 280px;
     display: block;
 }
-.name{
+
+.name {
     background-color: #000;
     color: white;
     display: inline-block;
@@ -46,7 +48,8 @@
     text-transform: uppercase;
     padding: 12px 0 12px 12px;
 }
-.price{
+
+.price {
     background-color: gray;
     color: white;
     display: inline-block;
@@ -56,11 +59,12 @@
     padding: 12px 0;
     text-align: center;
 }
-.info{
+
+.info {
     font-size: 0;
 }
 
-.overlay{
+.overlay {
     border: 10px solid rgba(255, 255, 255, 0.5);
     display: none;
     position: absolute;
@@ -70,7 +74,8 @@
     top: 0;
     left: 0;
 }
-.icons{
+
+.icons {
     width: 170px;
     font-size: 0;
     position: absolute;
@@ -78,7 +83,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.box{
+
+.box {
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -86,12 +92,14 @@
     font-size: 20px;
     line-height: 50px;
     margin-right: 10px;
+    border: 1px solid #fff;
 }
-.box:nth-child(3){
+
+.box:nth-child(3) {
     margin-right: 0;
 }
 
-.basket{
+.basket {
     display: inline-block;
     height: 50px;
     width: 170px;
@@ -100,21 +108,21 @@
     font-size: 20px;
     line-height: 50px;
     margin-top: 10px;
+    border: 1px solid #fff;
 }
-.card:hover > .overlay{
+
+.card:hover > .overlay {
     display: block;
 }
+
 .box:hover, .basket:hover {
     background-color: #1abc9c;
 }
 
-.card:hover .name{
+.card:hover .name {
     background-color: #1abc9c;
 }
-.card:hover .price{
+
+.card:hover .price {
     background-color: #7fd9c7;
-}
-
-.picture{
-
 }
