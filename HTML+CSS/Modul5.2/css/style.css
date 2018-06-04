@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 60px 0;
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: auto;
+}
+.p3{
+    width: 300px;
+    height: 350px;
+    display: block;
+}
+.name{
+    background-color: #000;
+    color: white;
+    display: inline-block;
+    width: 75%;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 17px 0 17px 17px;
+}
+.price{
+    background-color: gray;
+    color: white;
+    display: inline-block;
+    width: 25%;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 17px 0;
+    text-align: center;
+}
+.info{
+    font-size: 0;
+}
+
+.overlay{
+    border: 10px solid rgba(255, 255, 255, 0.5);
+    display: none;
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+.box{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: yellowgreen;
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+    margin-right: 10px;
+}
+.box:nth-child(3){
+    margin-right: 0;
+}
+.icons{
+    width: 170px;
+    font-size: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.basket{
+    height: 50px;
+    background-color: yellowgreen;
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+    margin-top: 10px;
+}
+.card:hover > .overlay{
+    display: block;
+}
+.box:hover, .basket:hover {
+    background-color: #fff;
+}
+
+.card:hover .name{
+    background-color: #00f;
+}
+.card:hover .price{
+    background-color: aqua;
+}
