@@ -44,28 +44,28 @@
 */
 
 // ================================================ Variant1 ================================================
-// const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
-//
-// function checkLoginValidity(login) {
-//     return login.length >= 4 && login.length <= 16;
-// }
-//
-// function checkIfLoginExists(logins, login) {
-//     return logins.includes(login);
-// }
-//
-// function addLogin(logins, login) {
-//     if (!checkLoginValidity(login)){
-//         alert( 'Ошибка! Логин должен быть от 4 до 16 символов');
-//     } else if(checkIfLoginExists(logins, login)) {
-//         alert( 'Такой логин уже используется!');
-//     } else {
-//         logins.push(login);
-//         alert( 'Логин успешно добавлен!');
-//     }
-// }
-// addLogin(logins,'Dima');
-// console.log(logins);
+const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
+
+function checkLoginValidity(login) {
+    return login.length >= 4 && login.length <= 16;
+}
+
+function checkIfLoginExists(logins, login) {
+    return logins.includes(login);
+}
+
+function addLogin(logins, login) {
+    if (!checkLoginValidity(login)){
+        alert( 'Ошибка! Логин должен быть от 4 до 16 символов');
+    } else if(checkIfLoginExists(logins, login)) {
+        alert( 'Такой логин уже используется!');
+    } else {
+        logins.push(login);
+        alert( 'Логин успешно добавлен!');
+    }
+}
+addLogin(logins,'Dima');
+console.log(logins);
 
 // ================================================ Variant2 ================================================
 // const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
