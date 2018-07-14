@@ -18,6 +18,7 @@
   Написанный класс должен соответствовать следующему jsDoc описанию. То есть класс должен содержать
   указанные методы, которые принимают и возвращают данные указанного типа.
 */
+
 /*
   🔔 Обратите внимание на такие моменты:
     	✔️ класс не взаимодействует с внешним миром. Это не его дело, этим занимается другой код,
@@ -40,35 +41,56 @@ class Hamburger {
     }
 
     addTopping(topping) {
-        this._topping.includes(topping) ? alert("выберите другую добавку"): this._topping.push(topping);
+        // Добавить topping к гамбургеру. Можно добавить несколько topping, при условии, что они разные.
+        // @param {String} topping - Тип добавки
+        this._topping.includes(topping) ? alert("выберите другую добавку") : this._topping.push(topping);
     }
+
     removeTopping(topping) {
+        // Убрать topping, при условии, что она ранее была добавлена
+        // @param {String} topping - Тип добавки
         this._topping.includes(topping) ? this._topping = this._topping.filter(el => el !== topping) : alert(`${topping} don't exist`);
     }
-    get getToppings() {
-        return this._topping
+
+    getToppings() {
+        // Получить список toppings
+        // @returns {Array} - Массив добавленных topping, содержит значения констант Hamburger.TOPPING_*
+        // Попробуйте сделать это геттером чтобы можно было обращаться как obj.toppings и нам вернет массив добавок
+        return this._topping;
     }
-    get getSize() {
+
+    getSize() {
+        // Узнать размер гамбургера
+        // @returns {String} - размер гамбургера
+        // Попробуйте сделать это геттером чтобы можно было обращаться как obj.size и нам вернет размер
         return this._size;
     }
-    get getStuffing() {
+
+    getStuffing() {
+        // Узнать начинку гамбургера
+        // @returns {String} - начинка гамбургера
+        // Попробуйте сделать это геттером чтобы можно было обращаться как obj.stuffing и нам вернет начинку
         return this._stuffing;
     }
-    get calculatePrice() {
+
+    calculatePrice() {
+        // Узнать цену гамбургера
+        // @returns {Number} - Цена в деньгах
+        // Попробуйте сделать это геттером чтобы можно было обращаться как obj.price и нам вернет сумму.
+        return Hamburger.SIZES[this._size].price + Hamburger.STUFFINGS[this._stuffing].price + this._topping.reduce((acc, elem) => acc + Hamburger.TOPPINGS[elem].price, 0);
     }
-    get calculateCalories() {
+
+    calculateCalories() {
+        // Узнать калорийность
+        // @returns {Number} - Калорийность в калориях
+        // Попробуйте сделать это геттером чтобы можно было обращаться как obj.calories и нам вернет сумму.
+        return Hamburger.SIZES[this._size].calories + Hamburger.STUFFINGS[this._stuffing].calories + this._topping.reduce((acc, elem) => acc + Hamburger.TOPPINGS[elem].calories, 0)
     }
 }
+
 Hamburger.SIZE_SMALL = 'SIZE_SMALL';
 Hamburger.SIZE_LARGE = 'SIZE_LARGE';
-Hamburger.STUFFING_CHEESE = 'STUFFING_CHEESE';
-Hamburger.STUFFING_SALAD = 'STUFFING_SALAD';
-Hamburger.STUFFING_MEAT = 'STUFFING_MEAT';
-Hamburger.TOPPING_SPICE = 'TOPPING_SPICE';
-Hamburger.TOPPING_SAUCE = 'TOPPING_SAUCE';
 
-// let burger = Hamburger(Hamburger.SIZE_SMALL, 'Chees');
-// console.log(burger);
 Hamburger.SIZES = {
     [Hamburger.SIZE_SMALL]: {
         price: 30,
@@ -80,6 +102,10 @@ Hamburger.SIZES = {
         calories: 100,
     },
 };
+
+Hamburger.STUFFING_CHEESE = 'STUFFING_CHEESE';
+Hamburger.STUFFING_SALAD = 'STUFFING_SALAD';
+Hamburger.STUFFING_MEAT = 'STUFFING_MEAT';
 
 Hamburger.STUFFINGS = {
     [Hamburger.STUFFING_CHEESE]: {
@@ -96,6 +122,9 @@ Hamburger.STUFFINGS = {
     },
 };
 
+Hamburger.TOPPING_SPICE = 'TOPPING_SPICE';
+Hamburger.TOPPING_SAUCE = 'TOPPING_SAUCE';
+
 Hamburger.TOPPINGS = {
     [Hamburger.TOPPING_SPICE]: {
         price: 10,
@@ -107,29 +136,34 @@ Hamburger.TOPPINGS = {
     },
 };
 
+/* Вот как может выглядеть использование этого класса */
+
+// Маленький гамбургер с начинкой из сыра
 const hamburger = new Hamburger(Hamburger.SIZE_SMALL, Hamburger.STUFFING_CHEESE);
 
 // Добавка из приправы
 hamburger.addTopping(Hamburger.TOPPING_SPICE);
+
 // Спросим сколько там калорий
 console.log("Calories: ", hamburger.calculateCalories());
+
 // Сколько стоит?
 console.log("Price: ", hamburger.calculatePrice());
+
 // Я тут передумал и решил добавить еще соус
 hamburger.addTopping(Hamburger.TOPPING_SAUCE);
+
 // А сколько теперь стоит?
 console.log("Price with sauce: ", hamburger.calculatePrice());
+
 // Проверить, большой ли гамбургер?
 console.log("Is hamburger large: ", hamburger.getSize() === Hamburger.SIZE_LARGE); // -> false
+
 // Убрать добавку
 hamburger.removeTopping(Hamburger.TOPPING_SPICE);
+
 // Смотрим сколько добавок
 console.log("Hamburger has %d toppings", hamburger.getToppings().length); // 1
-
-
-
-
-
 
 
 
