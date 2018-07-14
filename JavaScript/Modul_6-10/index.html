@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modul_6-10</title>
+</head>
+<style>
+    /*.big {*/
+    /*font-size: 50px;*/
+    /*}*/
+
+    /*.map {*/
+    /*width: 100%;*/
+    /*height: 400px;*/
+    /*background-color: #616161;*/
+    /*}*/
+    /*.box{*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*border: 2px solid #000;*/
+    /*background-color: green;*/
+    /*}*/
+
+
+    /*html {*/
+        /*box-sizing: border-box;*/
+    /*}*/
+
+    /**,*/
+    /**::before,*/
+    /**::after {*/
+        /*box-sizing: inherit;*/
+    /*}*/
+
+    /*body {*/
+        /*font-family: 'Roboto', sans-serif;*/
+        /*font-size: 16px;*/
+    /*}*/
+
+    /*img {*/
+        /*display: block;*/
+        /*max-width: 100%;*/
+        /*height: auto;*/
+    /*}*/
+
+    /*.post {*/
+        /*width: 400px;*/
+        /*padding: 8px;*/
+        /*box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);*/
+        /*border-radius: 2px;*/
+        /*color: #212121;*/
+        /*margin: 0 auto;*/
+    /*}*/
+
+    /*.post__image {*/
+        /*margin-bottom: 8px;*/
+    /*}*/
+
+    /*.post__title {*/
+        /*margin: 0;*/
+        /*margin-bottom: 16px;*/
+        /*font-size: 32px;*/
+        /*font-weight: 500;*/
+    /*}*/
+
+    /*.post__text {*/
+        /*margin: 0;*/
+        /*margin-bottom: 16px;*/
+        /*line-height: 1.5;*/
+    /*}*/
+
+    /*.button {*/
+        /*position: relative;*/
+        /*display: inline-block;*/
+        /*border: none;*/
+        /*border-radius: 3px;*/
+        /*padding: 0 1.5em;*/
+        /*vertical-align: top;*/
+
+        /*font-size: 15px;*/
+        /*line-height: 2.8;*/
+        /*color: #222;*/
+        /*text-transform: uppercase;*/
+        /*text-align: center;*/
+        /*white-space: nowrap;*/
+        /*font-family: inherit;*/
+        /*font-weight: 500;*/
+        /*text-decoration: none;*/
+
+        /*background-color: #fff;*/
+        /*overflow: hidden;*/
+        /*z-index: 0;*/
+        /*cursor: pointer;*/
+
+        /*box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);*/
+        /*transition: background-color 0.3s, box-shadow 0.3s, opacity 0.3s, color 0.3s;*/
+        /*-webkit-tap-highlight-color: rgba(0, 0, 0, 0);*/
+    /*}*/
+
+    /*.button:hover {*/
+        /*box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.3);*/
+    /*}*/
+
+    /* resets and general styles */
+</style>
+<body>
+<!--//====================================================== задача 6 ===================================================-->
+<!--<div id="root"></div>-->
+<!--//====================================================== задача 5 ===================================================-->
+<!--<div class="post">-->
+    <!--<img class="post__image" src="http://via.placeholder.com/400x150" alt="post image">-->
+    <!--<h2 class="post__title">Lorem ipsum dolor</h2>-->
+    <!--<p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, nemo dignissimos ea temporibus-->
+        <!--voluptatem maiores maxime consequatur impedit nobis sunt similique voluptas accusamus consequuntur, qui modi-->
+        <!--nesciunt veritatis distinctio rem!</p>-->
+    <!--<a class="button" href="#">Read more</a>-->
+<!--</div>-->
+<!--//====================================================== задача 3 ===================================================-->
+<!--<ul class="list"></ul>-->
+<!--//====================================================== задача 2 ===================================================-->
+<!--<ul class="list">-->
+<!--<li>HTML</li>-->
+<!--<li>CSS</li>-->
+<!--<li>JavaScript</li>-->
+<!--<li>React</li>-->
+<!--<li>NodeJS</li>-->
+<!--</ul>-->
+<!--//====================================================== задача 1 ===================================================-->
+<!--<ul class="categories">-->
+<!--<li>-->
+<!--Животные-->
+<!--<ul>-->
+<!--<li>Кот</li>-->
+<!--<li>Хомяк</li>-->
+<!--<li>Лошадь</li>-->
+<!--<li>Попугай</li>-->
+<!--</ul>-->
+<!--</li>-->
+<!--<li>-->
+<!--Продукты-->
+<!--<ul>-->
+<!--<li>Хлеб</li>-->
+<!--<li>Зелень</li>-->
+<!--<li>Творог</li>-->
+<!--</ul>-->
+<!--</li>-->
+<!--<li>-->
+<!--Технологии-->
+<!--<ul>-->
+<!--<li>html</li>-->
+<!--<li>css</li>-->
+<!--<li>js</li>-->
+<!--<li>react</li>-->
+<!--<li>node</li>-->
+<!--</ul>-->
+<!--</li>-->
+<!--</ul>-->
+<!--//====================================================== задача ===================================================-->
+<!--<div></div>-->
+<!--<form action="#" method="post">-->
+<!--<input type="text" class="name" placeholder="User name">-->
+<!--<input type="submit" value="Read data" id="send">-->
+<!--</form>-->
+<!--<div>-->
+<!--<h2 id="title">Title</h2>-->
+<!--<p class="text text&#45;&#45;center par">some text</p>-->
+<!--<ul class="list">-->
+<!--<li class="item"><a href="https://www.google.com/">item 1</a></li>-->
+<!--<li class="item"><a href="1">item 2</a></li>-->
+<!--<li class="item"><a href="2">item 3</a></li>-->
+<!--</ul>-->
+<!--<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae blanditiis ipsum molestias, nam-->
+<!--sit totam. Aliquam amet cumque deserunt dolorem est, facilis iure iusto provident quo similique. Dolore,-->
+<!--doloremque.</p>-->
+<!--&lt;!&ndash;data and dataset&ndash;&gt;-->
+<!--<ul>-->
+<!--<li data-animal="bird">Owl</li>-->
+<!--<li data-animal="fish">Salmon</li>-->
+<!--<li data-animal="spider">Tarantula</li>-->
+<!--</ul>-->
+<!--&lt;!&ndash;&lt;!&ndash;clone &ndash;&gt;&ndash;&gt;-->
+<!--<article class="article">-->
+<!--<h2>Article title</h2>-->
+<!--<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, natus unde enim deleniti quod amet tempore-->
+<!--officia, possimus non iure vitae quasi reiciendis!</p>-->
+<!--</article>-->
+<!--</div>-->
+<!--map-->
+<!--<div class="map js-google-map"></div>-->
+<!--<script defer-->
+<!--src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_yeqY2NL1yCJhi-L83z8xFd1vlEY0EtE&callback=initMap">-->
+<!--</script>-->
+
+<!--<button class="btn" id="one">One Listener</button>-->
+<!--<button class="btn" id="many">Many Listeners</button>-->
+<!--<ul class="list">-->
+<!--<li class="item">Item 1</li>-->
+<!--<li class="item">Item 2</li>-->
+<!--<li class="item">Item 3</li>-->
+<!--<li class="item">Item 4</li>-->
+<!--<li class="item">Item 5</li>-->
+<!--</ul>-->
+<script src="js/index.js"></script>
+</body>
+</html>

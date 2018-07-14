@@ -55,22 +55,24 @@ function checkIfLoginExists(logins, login) {
 }
 
 function addLogin(logins, login) {
-    if (!checkLoginValidity(login)){
-        alert( 'Ошибка! Логин должен быть от 4 до 16 символов');
-    } else if(checkIfLoginExists(logins, login)) {
-        alert( 'Такой логин уже используется!');
+    if (!checkLoginValidity(login)) {
+        alert('Ошибка! Логин должен быть от 4 до 16 символов');
+    } else if (checkIfLoginExists(logins, login)) {
+        alert('Такой логин уже используется!');
     } else {
         logins.push(login);
-        alert( 'Логин успешно добавлен!');
+        alert('Логин успешно добавлен!');
     }
 }
-addLogin(logins,'Dima');
+
+addLogin(logins, 'Dima');
 console.log(logins);
 
 // ================================================ Variant2 ================================================
 // const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
 //
-// let checkLoginValidity = (login) => {
+// let checkLoginValidity;
+// checkLoginValidity = (login) => {
 //     return login.length >= 4 && login.length <= 16;
 // };
 //
@@ -79,13 +81,13 @@ console.log(logins);
 // };
 //
 // let addLogin = (logins, login) => {
-//     if (!checkLoginValidity(login)){
-//         alert( 'Ошибка! Логин должен быть от 4 до 16 символов');
-//     } else if(checkIfLoginExists(logins, login)) {
-//         alert( 'Такой логин уже используется!');
+//     if (!checkLoginValidity(login)) {
+//         alert('Ошибка! Логин должен быть от 4 до 16 символов');
+//     } else if (checkIfLoginExists(logins, login)) {
+//         alert('Такой логин уже используется!');
 //     } else {
 //         logins.push(login);
-//          alert( 'Логин успешно добавлен!');
+//         alert('Логин успешно добавлен!');
 //     }
 // };
 
@@ -95,13 +97,13 @@ console.log(logins);
 // let checkLoginValidity = (login) => login.length >= 4 && login.length <= 16;
 // let checkIfLoginExists = (logins, login) => logins.includes(login);
 // let addLogin = (logins, login) => {
-//     if (!checkLoginValidity(login)){
-//         alert( 'Ошибка! Логин должен быть от 4 до 16 символов');
-//     } else if(checkIfLoginExists(logins, login)) {
-//         alert( 'Такой логин уже используется!');
+//     if (!checkLoginValidity(login)) {
+//         alert('Ошибка! Логин должен быть от 4 до 16 символов');
+//     } else if (checkIfLoginExists(logins, login)) {
+//         alert('Такой логин уже используется!');
 //     } else {
 //         logins.push(login);
-//          alert( 'Логин успешно добавлен!');
+//         alert('Логин успешно добавлен!');
 //     }
 // };
 

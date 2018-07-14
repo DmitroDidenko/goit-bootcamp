@@ -1679,7 +1679,6 @@
 // console.log(allGuestsActive(guestsB)); // true
 
 
-
 // const scientist = [
 //     { first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 },
 //     { first: 'Isaac', last: 'Newton', year: 1643, passed: 1727 },
@@ -1695,8 +1694,12 @@
 //     { first: 'Hanna', last: 'Hammarström', year: 1829, passed: 1909 }
 // ];
 
-// 1) отримати масив вчених що народилися в 19 ст
-// 2) знайти суму років скільки прожили всі вченні
+// // 1) отримати масив вчених що народилися в 19 ст
+// const names = arr => arr.filter(item => item.year >= 1800).map(el => el.last);
+// console.log(names(scientist));
+// // 2) знайти суму років скільки прожили всі вченні
+// const years = arr => arr.reduce((acc, el) => acc + (el.passed - el.year), 0);
+// console.log(years(scientist));
 // 3) Відсортувати вчених по алфавіту
 // 4) Відсортувати вчених по даті народження
 // 5) Відсортувати вчених по кількості прожитих років
@@ -1743,6 +1746,315 @@
 // console.log(getAllPropValues(users, 'name')); // ['Poly', 'Mango', 'Ajax']
 // console.log(getAllPropValues(users, 'mood')); // ['happy', 'blissful', 'tired']
 // console.log(getAllPropValues(users, 'active')); // []
+
+
+// ed this MATLAB snippet: Untitled
+// Написати функцію що видає фінальний результат в гольфі
+// function golfScore(par, strokes) приймає 2 аргумента
+// par - кількість ударів що дозволено, strokes - реальна кількість ударів
+// Потрібно порівняти strokes з такими критеріями
+// 1 дасть "Hole-in-one!"
+// strokes <= par -2 дасть "Eagle"
+// strokes == par -1 дасть "Birdie"
+// strokes == par дасть "Par"
+// strokes == par +1 дасть "Bogey"
+// strokes == par +2 дасть "Double Bogey"
+// Все інше "Go Home!"
+
+// ======================================= <  29.06.2018  > =======================================
+
+// Написати об'єкт tank який буде мати такі властивості і методи.
+// 1) coordinate 10 координати Х
+// 2) CoordinateY 10 координати по У
+// 3) life 100 здоровя
+// 4) ammunition 5 кількість патронів
+// 5) engineStatus true статус двигуна
+// 6) moveToX(x) рухається до точки х
+// 6) moveToY(у) рухається до точки у
+// 7) fireTo(x, y) стріляє в точку х, у
+// 8) canFire() перевірка чи є патрони
+// 9) checkHealth() перевірка чи є неповне здоров'я
+// 10) heal(x) додає здоровя
+// 11) checkEngine() перевірка статусу двигуна
+// 12) repairEngine() починка двигуна
+// 13) showCoordinate() показує координати танка
+// 14) name імя гравця
+// 15) color
+
+// 'use strict';
+// const tank = {
+//     x: 10,
+//     y: 10,
+//     life: 100,
+//     ammunition: 5,
+//     engineStatus: true,
+//     name: 'T-34',
+//     color: 'green',
+//     moveToX(x) {
+//         this.x = this.x + x
+//     },
+//     moveToY(y) {
+//         this.y = this.y + y
+//     },
+//     fireTo(x, y) {
+//         if (this.canFire()) {
+//             this.amunition = this.amunition - 1
+//         } else {
+//             alert('You have no bullets')
+//         }
+//     },
+//     canFire() {
+//         return this.ammunition > 0;
+//     },
+//     checkHealth() {
+//         return this.life > 0 && this.life < 100
+//     },
+//     health(x) {
+//         if (this.checkHealth()) {
+//             this.life = this.life + x
+//         } else {
+//             alert('Health is full')
+//         }
+//     },
+//     checkEngine() {
+//         return this.engineStatus === true;
+//     },
+//     repairEngine() {
+//         if (this.checkEngine()) {
+//             alert('Engine is repaired')
+//         } else {
+//             this.engineStatus = true
+//         }
+//     },
+//     showCoordinate() {
+//         return {
+//             x: this.x,
+//             y: this.y,
+//         }
+//     },
+// };
+
+// 'use strict';
+// function Tank(name, color, x, y) {
+//     this.x = x;
+//     this.y = y;
+//     this.life = 100;
+//     this.ammunition = 5;
+//     this.engineStatus = true;
+//     this.name = name;
+//     this.color = color;
+//     this.moveX = function (x) {
+//         this.x = this.x + x
+//     };
+//     this.moveY = function (y) {
+//         this.y = this.y + y
+//     };
+//     this.fireTo = function(x, y) {
+//         if (this.canFire()) {
+//             this.amunition = this.amunition - 1
+//         } else {
+//             alert('You have no bullets')
+//         }
+//     };
+//     this.canFire = function() {
+//         return this.ammunition > 0;
+//     };
+//     this.checkHealth = function() {
+//         return this.life > 0 && this.life < 100
+//     };
+//     this.health = function(x) {
+//         if (this.checkHealth()) {
+//             this.life = this.life + x
+//         } else {
+//             alert('Health is full')
+//         }
+//     };
+//     this.checkEngine = function() {
+//         return this.engineStatus === true;
+//     };
+//     this.repairEngine = function() {
+//         if (this.checkEngine()) {
+//             alert('Engine is repaired')
+//         } else {
+//             this.engineStatus = true
+//         }
+//     };
+//     this.showCoordinate = function() {
+//         return {
+//             x: this.x,
+//             y: this.y,
+//         }
+//     };
+// }
+
+// const Dima = new Tank('Dima', 'green', 10, 10);
+// console.log(Dima);
+// const Anton = new Tank('Anton', 'Blue', 0, 0);
+// console.log(Anton);
+// const Sasha = new Tank('Sasha', 'Yellow', 20, 20);
+// console.log(Sasha);
+// const Jora = new Tank('Jora', 'Black', 5, 5);
+// console.log(Jora);
+//
+// Dima.moveX(20);
+// Anton.moveX(50);
+// Dima.moveY(30);
+// Anton.moveY(40);
+// Jora.moveY(10);
+// console.log(Dima.showCoordinate());
+// console.log(Anton.showCoordinate());
+// console.log(Jora.showCoordinate());
+// console.log(Sasha.showCoordinate());
+// Jora.fireTo();
+// Jora.fireTo();
+// Anton.fireTo();
+// Anton.fireTo();
+// Anton.fireTo();
+// Dima.fireTo();
+// console.log(Dima);
+// Dima.life -= 50;
+// Dima.engineStatus = false;
+// console.log(Dima);
+// Dima.repairEngine();
+// console.log(Dima);
+// Dima.health(30);
+// console.log(Dima);
+
+
+// const hotel = {
+//     name: 'Resort Hotel'
+// };const hotel1 = {
+//     name: '4 Seasons Hotel'
+// };const hotel2 = {
+//     name: '7 days Hotel'
+// };
+//
+// function showName(name) {
+//     console.log(`${name} name is ${this.name}`);
+// }
+// showName.call(hotel2, 'Tony');
+// showName.call(hotel, 'Tony');
+// showName.call(hotel1, 'Tony');
+//
+// const hotel = {
+//     name: 'Resort Hotel',
+// };
+// const hotel2 = {
+//     name: '4 Seasons Hotel',
+// };
+//
+// const hotel3 = {
+//     name: '7 days Hotel',
+// };
+//
+//
+// function showName(name, city) {
+//     // console.log(`${name} welcomen to ${city} hotel name ${this.name}`);
+//     console.log(this);
+// }
+// showName.call(hotel3, 'Tony', 'Kyiv',5,'dsfsdf');
+
+// call
+// showName.call(hotel);
+// showName.call(hotel2);
+// showName.call(hotel3);
+// add arguments
+
+// apply
+// showName.apply(hotel,['Tony', 'Maroccccco']);
+// showName.apply(hotel2,['Tony', 'Magadan']);
+// showName.apply(hotel3,['Tony', 'Paris','Zhmerynka']);
+
+// call - coma
+// apply - Array
+
+// bind
+// const boundShowName = showName.bind(hotel);
+// boundShowName();
+
+// const mick = {
+//     name: 'Mick',
+//     modules: 3,
+//     learn(theme) {
+//         this.modules += 1;
+//         return `Student ${this.name} passed ${theme}`;
+//     }
+// };
+// // //
+// const jane = {
+//     name: 'Jane',
+//     modules: 5,
+//     learn(theme) {
+//         this.modules += 1;
+//         return `Student ${this.name} passed ${theme}`;
+//     }
+// };
+//
+// function Student(name, modules ) {
+//     // this = {}
+//     this.name = name;
+//     this.modules = modules;
+//     this.learn = function (theme) {
+//         this.modules += 1;
+//         return `Student ${this.name} passed ${theme}`;
+//     };
+//     this.isActive = true
+//     // {
+//     // name: nameArg,
+//     // modules: modulesArg,
+//     // learn: func,
+//     // isActive: true
+//     // }
+//     // return this
+// }
+//
+// const mick = new Student('Mick', 5); // {}
+// const jane = new Student("Jane", 3);
+// console.log(mick);
+// console.log(jane);
+
+
+// function User(setting) { // obj with settings
+//     this.age = setting.age;
+//     this.name = setting.name;
+//     this.isActive = setting.isActive;
+//     this.isPremium = setting.isPremium;
+//     this.likesCount = setting.likesCount;
+//     this.showLikes = function () {
+//       return this.likesCount;
+//   }
+// }
+// ​
+// const jane = new User({age: 25,name: 'Jane',isActive: true,isPremium: true,likesCount: 500});
+// const mick = new User({name: 'Mick',age: 30,likesCount: 150,isActive: false,isPremium: true});
+// console.log(mick);
+// console.log(jane);
+
+// function User({age, name, isActive = false, isPremium = false, likesCount = 0}) {
+//     this.age = age;
+//     this.name = name;
+//     this.isActive = isActive;
+//     this.isPremium = isPremium;
+//     this.likesCount = likesCount;
+//
+//     this.showLikes = function () {
+//         return this.likesCount;
+//     }
+// }
+// //
+// const jane = new User({age: 25,name: 'Jane', isPremium: true});
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
