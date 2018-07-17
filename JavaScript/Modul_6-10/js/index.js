@@ -976,7 +976,7 @@
 // one.addEventListener('click', first);
 
 // many.addEventListener('click', first);
-// many.addEventListener('click', second);                                  // активация обработчика о очереди
+// many.addEventListener('click', second);                                  // активация обработчика по очереди
 // many.addEventListener('click', hello);
 // many.addEventListener('click', function () {
 //     first();

@@ -50,33 +50,33 @@
 //     e.target.style.left = `${randomLeft}px`;
 // }
 // btns.forEach(el => el.addEventListener('mouseenter', moveBtn));
-//
-// // let btns = document.querySelectorAll('.btn');
-// // function moveBtn(e) {
-// //     let btnH = thiss.clientHeight;                                                                    // замість e.target можна писати this
-// //     let btnW = this.clientWidth;
-// //     let randomLeft = Math.floor(Math.random() * (window.innerWidth - btnW));
-// //     let randomTop = Math.floor(Math.random() * (window.innerHeight - btnH));
-// //     this.style.top = `${randomTop}px`;
-// //     this.style.left = `${randomLeft}px`;
-// // }
-// // btns.forEach(el => el.addEventListener('mouseenter', moveBtn));
+
+// let btns = document.querySelectorAll('.btn');
+// function moveBtn(e) {
+//     let btnH = thiss.clientHeight;                                                                    // замість e.target можна писати this
+//     let btnW = this.clientWidth;
+//     let randomLeft = Math.floor(Math.random() * (window.innerWidth - btnW));
+//     let randomTop = Math.floor(Math.random() * (window.innerHeight - btnH));
+//     this.style.top = `${randomTop}px`;
+//     this.style.left = `${randomLeft}px`;
+// }
+// btns.forEach(el => el.addEventListener('mouseenter', moveBtn));
 
 // ============================== створення меню ul та стилізація за допомогою event ==================================
-// let ul = document.querySelector('.ul');
-// let li = document.querySelectorAll('.ul__li');
-// let Arr = Array.from(li);
-// let btn = document.querySelector('.btn');
-// function click(e) {
-//     console.log(Arr.indexOf(e.target) + 1);
-//     Arr.forEach(el => el.classList.remove('change'));
-//     e.target.classList.toggle('change');
-// }
-// function baton() {
-//     ul.classList.toggle('ulNone');
-// }
-// ul.addEventListener('click', click);
-// btn.addEventListener('click', baton);
+let ul = document.querySelector('.ul');
+let li = document.querySelectorAll('.ul__li');
+let Arr = Array.from(li);
+let btn = document.querySelector('.btn');
+function click(e) {
+    console.log(Arr.indexOf(e.target) + 1);
+    Arr.forEach(el => el.classList.remove('change'));
+    e.target.classList.toggle('change');
+}
+function baton() {
+    ul.classList.toggle('ulNone');
+}
+ul.addEventListener('click', click);
+btn.addEventListener('click', baton);
 
 // ================================ 3 Способи написання галереї з картинками =====================================
 //вариант с полключенным HTML
@@ -113,7 +113,7 @@
 //     {small: 'https://placeimg.com/480/240/people/sepia', big: 'https://placeimg.com/960/480/people/sepia'},
 //     {small: 'https://placeimg.com/480/240/arch/sepia', big: 'https://placeimg.com/960/480/arch/sepia'},
 // ];
-
+//
 // let vont = document.querySelector('.cont');
 // let body = document.body;
 // function createGallery(arr) {
