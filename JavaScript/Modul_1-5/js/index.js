@@ -1,41 +1,4 @@
-// var x = 5;
-// console.log(x);
-//
-// /*
-//   - Объявите две переменные: guest и name
-//   - В переменную name запишите строку 'Mango'
-//   - Скопируйте значение из name в guest
-//   - Выведите в консоли значение переменной guest (должно вывести 'Mango')
-// */
-//
-// let guest = 'Mango';;
-// let name = 'Mango';
-// console.log(guest);
-
-// /*
-//   Напишите скрипт который:
-//   - при загрузке страницы спрашивает имя пользователя (используйте prompt)
-//   - после того как было введено имя показывает alert с тем что ввели в prompt
-// */
-//
-// let a = prompt('your name');
-// alert(a);
-
-//
-// /*
-//  Есть три переменные содержащие день, месяц, и год.
-//  Необходимо получить строку день\месяц\год
-//  в формате xx\xx\xxxx
-// */
-// ​
-// const day = 18;
-// const month = 06;
-// const year = 2018;
-// ​
-// const date =
-// ​
-// console.log(date); // 18\06\2018
-
+// ===============================  Prompt, alert, Переменные, if...else, switch  ======================================
 // let age = prompt('Сколько Вам полных лет?');
 // console.log('Ваш возраст:', age, 'лет');
 // let day = (age * 365);
@@ -48,67 +11,13 @@
 // console.log ('Вы прожили секунд:', sec, 'секунд');
 
 // let name = prompt('Enter your name');
-// let age = prompt(' Enter your age')
-// console.log(`My name is ${name} i am ${age} years old`);
+// let age = prompt(' Enter your age');
 // console.log(`My name is ${name} i am ${age} years old`);
 
-//
 // let day = 18;
 // let month = 6;
 // let year = 2018;
 // console.log(`date = ${day}\\0${month}\\${year}`);
-
-// let a = 'qwertyuiop';
-// let b = 'asdfghjkl;';
-// let c = 'zxcvbnm,./';
-// console.log(b[5]+a[2]+b[8]+b[8]+a[8]+a[1]+a[8]+a[3]+b[8]+b[2]);
-
-// let c = 'Hello'
-// console.log(c.toLowerCase());
-// console.log(c.toUpperCase());
-
-// let a = 'heroplus';
-// console.log(a.substring(1,3));
-// console.log(a.substr(1, 3));
-
-// /*
-//   Есть две переменные name и date, roomType, содержащие
-//   имя гостя, дату его прибытия на отдых и тип комнаты отеля.
-//
-//   Используя шаблонные строки необходимо записать
-//   в перменную message сообщение формата:
-//   "имя гостя" прибывает на отдых "дата прибытия" в "тип комнаты".
-//
-//   Найти ошибки в коде и исправить их, при верном решении
-//   в консоль будет выведена строка идентичная той что
-//   напротив console.log
-// */
-//
-// const name = 'Mango';
-// const date = '14/08/2031';
-// const roomType = 'люкс';
-//
-// const message = `${name} прибывает на отдых ${date} в ${roomType}`;
-// console.log(message); // Mango прибывает на отдых 14/08/2031 в люкс.
-
-/*
-  Есть 3 переменные в которых хранится  размер составляющих
-  блочной модели в формате Npx, где N это целое число.
-
-  Используя эти переменные, запишите в переменную totalWidth
-  общую ширину блока в формате Npx.
-
-  К примеру "сумма" '20px' и '30px' будет равна '50px'.
-
-  Если все верно, то в консоли будет выведена строка '125px'
-*/
-
-// const padding = "20px";
-// const border = "5px";
-// const contentWidth = "100px";
-//
-// let totalWidth = ;
-// console.log(totalWidth); // '125px'
 
 // let time = prompt('введшть час');
 // if(time>=14 && time <= 15){
@@ -125,26 +34,7 @@
 // else {
 //     alert('Залишайтесь вдома')
 
-//
-// let month = prompt('введите месяц').toLowerCase();
-//
-// if(month === 'june'|| month ==='july'|| month==='august'){
-//     alert('summer');
-// }
-//
-// else if(month === 'september'|| month ==='october'|| month==='november'){
-//     alert('autumn');
-// }
-//
-// else if(month === 'december'|| month ==='junuary'|| month==='february'){
-//     alert('winter');
-// }
-//
-// else if(month === 'march'|| month ==='april'|| month==='may'){
-//     alert('spring');
-// }
-
-// let luckyNumber = 1;
+// let luckyNumber = prompt('numb');
 // if (luckyNumber === 1) {
 //     console.log('more');
 // } else if (luckyNumber === 3) {
@@ -173,6 +63,17 @@
 // }
 
 // let month = prompt('введите месяц').toLowerCase();
+// if (month === 'june' || month === 'july' || month === 'august') {
+//     alert('summer');
+// } else if (month === 'september' || month === 'october' || month === 'november') {
+//     alert('autumn');
+// } else if (month === 'december' || month === 'junuary' || month === 'february') {
+//     alert('winter');
+// } else if (month === 'march' || month === 'april' || month === 'may') {
+//     alert('spring');
+// }
+
+// let month = prompt('введите месяц').toLowerCase();
 // switch (month) {
 //     case 'june':
 //     case 'july':
@@ -192,12 +93,26 @@
 //     case 'march':
 //     case 'april':
 //     case 'may':
-//     alert('spring');
+//         alert('spring');
 //         break;
 //     default:
 //         alert('none information');
 //         break;
 // }
+
+// =====================================================  Массиви  =====================================================
+// let a = 'qwertyuiop';
+// let b = 'asdfghjkl;';
+// let c = 'zxcvbnm,./';
+// console.log(b[5]+a[2]+b[8]+b[8]+a[8]+a[1]+a[8]+a[3]+b[8]+b[2]);
+
+// let c = 'Hello'
+// console.log(c.toLowerCase());
+// console.log(c.toUpperCase());
+
+// let a = 'heroplus';
+// console.log(a.substring(1,3));
+// console.log(a.substr(1, 3));
 
 // ,,,,,,,,,,,, как  создать массив ,,,,,,,,,,,,,
 // два способа записи массива
@@ -341,7 +256,7 @@
 // console.log(str.split('').reverse().join(''));
 // console.log(str2.split('').reverse().join(''));
 
-// ++++++++++++++++++++++++++++++++++++++++++ЦИКЛЫ+++++++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++++++++++++++  ЦИКЛЫ  +++++++++++++++++++++++++++++++++++++++++++++++
 // while- сначала проверяет потом выполняет действие
 // do while- сначала выполняет потом провеяет
 

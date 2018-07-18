@@ -191,15 +191,30 @@ const templateMobile = Handlebars.compile(mobileShop);
 const containerMobile = document.querySelector('.container');
 containerMobile.innerHTML = templateMobile(mobile);
 
-const button = document.querySelector('.module-card-button');
-const ul = document.querySelector('.hide');
-const body = document.querySelector('body');
+const button = document.querySelectorAll('.module-card-button');
+const ul = document.querySelectorAll('.hide');
+const container = document.querySelector('.container');
+container.addEventListener('click', click);
 
-function click() {
-    ul.classList.toggle('hide')
+function click(event) {
+    button.some((el, idx) => {
+        if (event.target === el) {
+            ul[idx].classList.toggle('show')
+        }
+    })
 }
 
-button.addEventListener('click', click);
+// /// creating show/hide button
+// const button = document.querySelector('module-card-button');
+// button.addEventListener('click', showMenu);
+//
+// function showMenu(e){
+//     // console.log(e.target);
+//     // if(e.target.classList.contains('module-card-button')){
+//     e.target.previousElementSibling.classList.toggle('hide')
+//     // e.stopPropagation();
+//     // }
+// };
 
 
 // const laptop = {
