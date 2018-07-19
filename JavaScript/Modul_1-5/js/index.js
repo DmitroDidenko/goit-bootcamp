@@ -34,7 +34,7 @@
 // else {
 //     alert('Залишайтесь вдома')
 
-// let luckyNumber = prompt('numb');
+// let luckyNumber = +prompt('numb');
 // if (luckyNumber === 1) {
 //     console.log('more');
 // } else if (luckyNumber === 3) {
@@ -114,7 +114,7 @@
 // console.log(a.substring(1,3));
 // console.log(a.substr(1, 3));
 
-// ,,,,,,,,,,,, как  создать массив ,,,,,,,,,,,,,
+// ========================  как  создать массив   ============================
 // два способа записи массива
 // let firstArray = [1, 2, 3];
 // let secondarray = new Array(5, 6, 7, 8);
@@ -124,14 +124,14 @@
 // ...........пустой массив...........
 // let empty = [];
 //
-// ...........вытянуть любую цыфру...........
+// =========================   вытянуть любую цыфру   =========================
 // let firstArr = [1,2,3,4,5,6,10,7,8,9];
 // console.log(firstArr[6]);
 // console.log(firstArr[2]);
 
 // ............вытянуть любую цыфру внутри массивов....................
 // let firstArr = [1,2,3,4[4,5,6,[1,2,3,4,5,6,10,7,8,9[error]]]];
-// console.log(firstarr[4][3][10]);
+// console.log(firstArr[4][3][10]); // error
 //
 // ............задача.............
 // let arr = [[1,2,3],[5,',','qwerty'],[2.5,5.6,'/']];
@@ -162,7 +162,7 @@
 
 // let arr = [1,2,3,4,5,6,10,7,8,9];
 // let x = arr.splice(1, 3); вырезка елемента с массива, первая цифра в скобках указывает на елемент  с которого начать,вторая на количество едементов для вырезки
-// let у = arr.splice(1, 0, 25); если запись с трех цифр , то третья записывает элемент( вторая 0 -не вырезает ничего , если цифра то вырезает количество едементов)
+// let у = arr.splice(1, 0, 25); если запись с трех цифр , то третья записывает элемент( вторая 0 - не вырезает ничего , если цифра то вырезает количество едементов)
 
 // let arr = [1, 5, 9, 8, 7, 10];
 // delete
@@ -179,49 +179,13 @@
 // arr.splice(1, 4, 'java', 'script');
 // console.log(arr);
 
-/*
-  Есть массив имен пользователей.
-  В первом console.log вывести длину массива.
-
-  В последующих console.log дополнить конструкцию
-  так, чтобы в консоль вывелись указаные в комментариях
-  элементы массива.
-*/
-
-// const sersu = ['Mango', 'Poly', 'Ajax', 'Chelsey'];
-//
-// console.log(sersu.length); // 4
-//
-// console.log(sersu [1]); // Poly
-// console.log(sersu [3]); // Chelsey
-// console.log(sersu [0]); // Mango
-// console.log(sersu [2]); // Ajax
-
-
-// /* Есть массив имен пользователей */
-// /* Используя методы массива, последовательно выполнить следующие операции */
-// let users = ["Mango", "Poly", "Ajax", "Chelsey"];
-// // Удалить из начала массива нулевой элемент
-// users.shift();
-// console.log(users); // ["Poly", "Ajax", "Chelsey"]
-// // Удалить из конца массив последний элемент
-// users.pop();
-// console.log(users); // ["Poly", "Ajax"]
-// // Добавить в начало массива любое имя
-// users.unshift('Dima');
-// console.log(users); // ["добавленое имя", "Poly", "Ajax"]
-// // Добавить в конец массива два любых имени за одну операцию
-// users.push('Pasha', 'Anton');
-// console.log(users); // ["добавленое ранее имя", "Poly", "Ajax", "имя 1", "имя 2"]
-// // let animals = ["cat","dog","rabbit","bird","fish"];
-// // вивести в консоль випадкову тваринку з масиву
 
 // // вивести в консоль випадкову тваринку з масиву
 // let animals = ["cat","dog","rabbit","bird","fish"];
 // let random = Math.floor(Math.random()*animals.length);
 // console.log(animals[random]);
 // let comp = (animals[random]);
-// let user = prompt('enter');
+// let user = prompt('enter - "cat","dog","rabbit","bird","fish"');
 //
 // if (comp === user) {
 //     alert('your win');
@@ -256,7 +220,7 @@
 // console.log(str.split('').reverse().join(''));
 // console.log(str2.split('').reverse().join(''));
 
-// ++++++++++++++++++++++++++++++++++++++++++  ЦИКЛЫ  +++++++++++++++++++++++++++++++++++++++++++++++
+// ====================================================  ЦИКЛЫ  =======================================================
 // while- сначала проверяет потом выполняет действие
 // do while- сначала выполняет потом провеяет
 
@@ -341,9 +305,8 @@
 // } while (number <= 100 && number !== null);
 
 // let students = ['Stupak', 'Yurchenko', 'Tabanyk', 'Baranov', 'Didenko', 'Chuprun', 'Babenko', 'Mukanovskyi', 'Plaski',
-//     'Sokolov', 'Galatuk', 'Savin', 'Grygorchuk','Krasnoiarov',
-//     'Rotman', 'Scryagin', 'Humenchuk'];
-// let random = Math.floor(Math.random()*students.length);
+//     'Sokolov', 'Galatuk', 'Savin', 'Grygorchuk', 'Krasnoiarov', 'Rotman', 'Scryagin', 'Humenchuk'];
+// let random = Math.floor(Math.random() * students.length);
 // console.log(students[random]);
 
 // Напишите скрипт, который выводит через console.log все
@@ -922,7 +885,7 @@
 //   }
 
 
-// ========================== правильность написания кода фор ин ==========================
+// =======================================  правильність написання кода for in  ========================================
 // const hotel = {
 //     name : "Resort Hotel",
 //     stars: 5,
@@ -1123,7 +1086,7 @@
 // ); // 3
 
 
-// =============================спред оператор. рестт оператор. умови роботи=============================
+// ================================  спред оператор. рест оператор. умови роботи  ======================================
 
 // // add the elements of an existing array into a new array
 // let certsToAdd = ['Algorithms', 'Front End'];
@@ -1958,20 +1921,4 @@
 // }
 // //
 // const jane = new User({age: 25,name: 'Jane', isPremium: true});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
