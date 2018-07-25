@@ -1,5 +1,5 @@
 import React from 'react'
-import './Form.css'
+import styles from './Form.css'
 
 // const input = {
 //   padding: '10px',
@@ -57,14 +57,14 @@ class NewForm extends React.Component {
                placeholder='Your login'
                value={this.state.login}
                onChange={this.changeInput}
-               className='input'/>
+               className={styles.input}/>
         <input type="password"
                name='password'
                placeholder='Password'
                value={this.state.password}
                onChange={this.changeInput}
-               className='input'/>
-        <button type='submit' className='btn'>Send</button>
+               className={styles.input}/>
+        <button type='submit' className={styles.btn}>Send</button>
       </form>
     )
   }
