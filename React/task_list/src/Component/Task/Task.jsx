@@ -1,13 +1,13 @@
 /*eslint-disable*/
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import styles from './ToDo.css';
-import Button from '../Button/Button';
+import Button from '../Button/Button.';
+import styles from './Task.css'
 
 
-class ToDo extends Component {
+class Task extends Component {
     state = {
-        isEdit: false,
+        Ed: false,
         taskText: this.props.text,
     };
 
@@ -17,39 +17,37 @@ class ToDo extends Component {
 
     edit = () => {
         this.setState(state => ({
-            isEdit: !state.isEdit,
+            Ed: !state.Ed,
         }))
     };
 
     inputChange = (e) => {
         const value = e.target.value;
         const name = e.target.name;
-
         this.setState({
             [name]: value,
         })
     };
 
-    taskUpdate = () => {
+   upD =() =>{
         this.props.update(this.props.id, this.state.taskText);
         this.edit();
     };
 
     render() {
-        const {text} = this.props;
         return (
-            <li className={styles.theList__item}>
-                {this.state.isEdit ?
+            <li className={styles.li}>
+                {this.state.Ed ?
                     <div>
-                        <input type='text' value={this.state.taskText} name='taskText' onChange={this.inputChange}/>
-                        <Button text='Save' onClick={this.taskUpdate}/>
-                        <Button text='Cancel' onClick={this.edit}/>
+                        <input className={styles.input} type='text' value={this.state.taskText} name='taskText' onChange={this.inputChange}/>
+                        <Button className={styles.btn} text='Save' onClick={this.upD}/>
+                        <Button className={styles.btn} text='Cancel' onClick={this.edit}/>
                     </div>
                     :
                     <div>
-                        {text}
-                        <Button text='Edit' onClick={this.edit}/>
-                        <Button text='Delete' onClick={this.deleteLi}/>
+                        {this.props.text}
+                        <Button className={styles.btn} text='Edit' onClick={this.edit}/>
+                        <Button className={styles.btn} text='Delete' onClick={this.deleteLi}/>
                     </div>
                 }
             </li>
@@ -57,11 +55,16 @@ class ToDo extends Component {
     }
 }
 
-ToDo.propTypes = {
+Task.propTypes = {
     text: PropTypes.string.isRequired,
     id: PropTypes.number.isRequired,
     func: PropTypes.func.isRequired,
     update: PropTypes.func.isRequired,
 };
 
-export default ToDo;
+export default Task;
+
+
+
+
+

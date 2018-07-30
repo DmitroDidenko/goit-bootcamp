@@ -8,9 +8,7 @@ const ToDoList = ({tasks, deleteItem, update}) => {
     return (
         <ul className={styles.theList}>
             <FlipMove>
-                {tasks.map(el => 
-                <ToDo text={el.text} id={el.id} key={el.id} func={deleteItem} update={update}/>
-                )}
+                {tasks.map(el => <ToDo text={el.text} id={el.id} key={el.id} func={deleteItem} update={update}/>)}
             </FlipMove>
         </ul>
     )

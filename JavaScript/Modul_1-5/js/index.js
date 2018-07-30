@@ -333,192 +333,19 @@
 //     return ['сума ' + sum, mult, minus, div, result];
 // }
 
-// function checkNumberType(num) {
-//     if (num % 2 === 1) {
-//         return 'odd'
-//     } else {
-//         return 'even'
-//     }
-//
-//     return num % 2 === 1 ? 'odd': 'even';
-// }
-//
-// console.log(checkNumberType(17));
-// console.log(checkNumberType(3));
-// console.log(checkNumberType(32));
-// console.log(checkNumberType(26));
-
-/*
-  Напишите функцию formatString(str)
-
-  - Функия принимает на вход строку str
-  - Если длина строки не превышает 40 символов, функция возвращает ее.
-  - Если длина больше 40 символов, то функция обрезает строку до 40-ти
-    символов и добавляет в конец строки троеточие '...', после чего
-    возвращает укороченную версию.
-*/
-
-// // Вызовы функции для проверки
-// console.log(
-//     formatString("Curabitur ligula sapien, tincidunt non.")
-// ); // вернется оригинальная строка
-//
-// console.log(
-//     formatString("Vestibulum facilisis, purus nec pulvinar iaculis.")
-// ); // вернется форматированная строка
-//
-// console.log(
-//     formatString("Curabitur ligula sapien.")
-// ); // вернется оригинальная строка
-//
-// console.log(
-//     formatString("Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.")
-// ); // вернется форматированная строка
-//
-// function formatString(text) {
-//     // if (text.length <= 40) {
-//     //     return text;
-//     // } else {
-//     //     return ${text.slice(0,40)}'...'
-//     // }
-//     return text <= 40 ? text: `${text.slice(0,40)}...`
-// }
-
-/*
-  Напишите функцию checkForSpam(str)
-
-  Функция принимает 1 параметр str - строку,
-  и проверять ее на содержание слов: spam и sale
-
-  Если нашли запрещенное слово то функция возвращает true,
-  если запрещенных слов нет функция возвращает false
-
-  PS: слова могут быть в произвольном регистре
-*/
-
-// // Вызовы функции для проверки
-// console.log(checkForSpam('Latest technology news')); // false
-//
-// console.log(checkForSpam('JavaScript weekly newsletter')); // false
-//
-// console.log(checkForSpam('Get best sale offers now!')); // true
-//
-// console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
-//
-// function checkForSpam(str) {
-//     str = str.toLowerCase();
-//     if (str.indexOf('spam') === -1 && str.indexOf('sale') === -1) {
-//         return false;
-//     } else {
-//        return true;
-//     }
-//
-//     return !(str.indexOf('spam') === -1 && str.indexOf('sale') === -1);
-// }
-
-// function sum(a, b) {
+// ======================  3варіанта запису однакової функції  =========================
+// function sum(a, b) {                 // варіант 1
 //     return a + b;
 // }
 // console.log(sum(2, 4));
 //
-// let sum1 = (a, b) => {
+// let sum1 = (a, b) => {               // варіант 2
 //     return a + b
 // };
 // console.log(sum1(2, 4));
 //
-// let sum2 = (a, b) => a + b;
+// let sum2 = (a, b) => a + b;          // варіант 3
 // console.log(sum2(2, 4));
-
-/*
-  Написать функцию, getPx(str)
-
-  Функция getPx должна получать строку вида '10px',
-  проверять была ли передана строка, если да,
-  возвращать только числовую составляющую, к примеру 10.
-
-  Если была передана не строка, функция возвращает null.
-*/
-
-// Вызовы функции для проверки
-
-// function getPx(str) {
-//     if (typeof str === 'string') {
-//         return parseFloat(str);
-//     } else {
-//         return null
-//     }
-//     return typeof str === 'string' ? parseFloat(str) : null;
-// }
-
-// let getPx = (str) => typeof str === "string" ? parseFloat(str) : null;
-
-// console.log( getPx("10px") === 10 ); // должно быть:  true
-// console.log( getPx("10.5") === 10.5 ); // должно быть:  true
-// console.log( getPx("0") === 0 ); // должно быть:  true
-// console.log( getPx(-1) ); // должно быть:  null
-// console.log( getPx(10) ); // должно быть:  null
-
-/*
-  Создайте фукнцию findLongestWord(str),
-  которая получает аргументом произвольную строку и
-  возвращает самое длинное слово в этой строке.
-
-  Важное условие - в строке могут быть только пробелы
-  и символы букв и цифр!
-*/
-
-// function findLongestWord(str) {
-//     let arr = str.split(' ');
-//     let long = '';
-//     for (let el of arr) {
-//         el.length > long.length ? long = el : null;
-//     }
-//     return long
-// }
-//
-//
-// // Вызовы функции для проверки
-// console.log(
-//     findLongestWord("The quick brown fox jumped over the lazy dog")
-// ); // вернет 'jumped'
-//
-// console.log(
-//     findLongestWord("Google do a roll")
-// ); // вернет 'Google'
-//
-// console.log(
-//     findLongestWord("May the force be with you")
-// ); // вернет 'force'
-
-/*
-  Создайте функцию findLargestNumber(numbers),
-  которая получает массив чисел numbers, и возвращает
-  самое большое число в массиве.
-*/
-
-// function findLargestNumber(numbers) {
-//     let larg = 0;
-//     for (let el of numbers) {
-//        if (el >= larg) {
-//            larg = el
-//        }
-//     }
-//     return larg;
-// }
-
-// // Вызовы функции для проверки
-// console.log(
-//     findLargestNumber([1, 2, 3])
-// ); // вернет 3
-//
-// console.log(
-//     findLargestNumber([27, 12, 18, 5])
-// ); // вернет 27
-//
-// console.log(
-//     findLargestNumber([31, 128, 14, 74])
-// ); // вернет 128
-
 
 // 1) Написати функцію spliceElement() що вирізає з массива третій елемент
 // 2) Написати функцію checkExist() що перевіряє чи є цей вирізаний елемент в базі
@@ -545,7 +372,6 @@
 // console.log(dataBase);
 
 // ================================== аргумент функции ===================================
-
 // function sumArg() {
 //     // console.log(arguments);
 //     // arguments = 1, 5, 9, 12, 1, 100;
@@ -574,11 +400,11 @@
 
 
 // ========================================= замыкание =========================================
-//замыкание это область виденья функции на которую не могут влиять внешние факторы. к ней можно достучатся только изнутри...
+// замыкание это область виденья функции на которую не могут влиять внешние факторы. к ней можно
+// достучатся только изнутри...
 
 // function secretPassword() {
 //     let password = 'xh38sk';
-//
 //     function guessPassword(guess) {
 //         if (guess === password) {
 //             return true;
@@ -586,7 +412,6 @@
 //             return false;
 //         }
 //     }
-//
 //     return guessPassword;
 // }
 //
@@ -671,7 +496,7 @@
 // console.log(rem('80px')); // 5rem
 // console.log(rem('8px')); // 0.5rem
 //
-// // написати ф-ї що приймає 2 параметра (розмір елемента і розмір контейнера) і повертає розмір елемента в %
+// // написати ф-ю що приймає 2 параметра (розмір елемента і розмір контейнера) і повертає розмір елемента в %
 // function prc(box, conteiner) {
 //     let a = 100;
 //     return parseFloat(box) / parseFloat(conteiner) * a + '%'
