@@ -1,4 +1,3 @@
-/*eslint-disable*/
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import Button from '../Button/Button.';
@@ -7,7 +6,7 @@ import styles from './Task.css'
 
 class Task extends Component {
     state = {
-        Ed: false,
+        ed: false,
         taskText: this.props.text,
     };
 
@@ -17,7 +16,7 @@ class Task extends Component {
 
     edit = () => {
         this.setState(state => ({
-            Ed: !state.Ed,
+            ed: !state.ed,
         }))
     };
 
@@ -37,14 +36,14 @@ class Task extends Component {
     render() {
         return (
             <li className={styles.li}>
-                {this.state.Ed ?
-                    <div>
+                {this.state.ed ?
+                    <div className={styles.form}>
                         <input className={styles.input} type='text' value={this.state.taskText} name='taskText' onChange={this.inputChange}/>
                         <Button className={styles.btn} text='Save' onClick={this.upD}/>
                         <Button className={styles.btn} text='Cancel' onClick={this.edit}/>
                     </div>
                     :
-                    <div>
+                    <div className={styles.form}>
                         {this.props.text}
                         <Button className={styles.btn} text='Edit' onClick={this.edit}/>
                         <Button className={styles.btn} text='Delete' onClick={this.deleteLi}/>

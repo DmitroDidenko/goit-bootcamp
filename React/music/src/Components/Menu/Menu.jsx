@@ -11,9 +11,9 @@ const Menu = ({menu}) => {
             </li> : <li className="menu__item" key={el.text}>
                 <a href={el.link} className="menu__link">{el.text}</a>
                 <Submenu sub={[
-                    {text: 'Artist', link: '#', parentKey: el.text},
-                    {text: 'Album', link: '#', parentKey: el.text},
-                    {text: 'Songs', link: '#', parentKey: el.text},
+                    {text: 'Artist', link: `${el.text}Artist`, parentKey: el.text},
+                    {text: 'Album', link: `${el.text}Album`, parentKey: el.text},
+                    {text: 'Songs', link: `${el.text}Song`, parentKey: el.text},
                 ]}/>
             </li>)}
         </ul>
@@ -23,9 +23,9 @@ const Menu = ({menu}) => {
 Menu.propTypes = {
     menu: PropTypes.arrayOf(
         PropTypes.shape({
-            text:PropTypes.string.isRequired,
-            link:PropTypes.string.isRequired,
-            submenu:PropTypes.bool.isRequired,
+            text: PropTypes.string.isRequired,
+            link: PropTypes.string.isRequired,
+            submenu: PropTypes.bool.isRequired,
         })
     )
 };

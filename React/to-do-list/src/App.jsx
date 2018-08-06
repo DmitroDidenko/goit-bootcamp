@@ -13,7 +13,7 @@ class App extends Component {
 
     componentDidMount() {
         axios.get('/tasks')                                   // отримуємо по ссилці інформацію
-            .then(({status, data}) => {                       // запитуємо статус і шнформацію і робимо перевірку
+            .then(({status, data}) => {                       // запитуємо статус і інформацію і робимо перевірку
                 if (status === 200) {                         // якщо працює . то виводить массив дата
                     this.setState({
                         items: data,
@@ -76,11 +76,11 @@ class App extends Component {
     updateItem = (id, word) => {
 
         const task = this.state.items.find(el => el.id === id);
-        axios.put(`/tasks/${id}`, {...task, text: word})        // варіант 2
+        axios.put(`/tasks/${id}`, {...task, text: word})                            // варіант 2
             .then(({status, data}) => {
                 if (status === 200) {
                     this.setState({
-                        items: this.state.items.map(el => el.id===id ? data : el)
+                        items: this.state.items.map(el => el.id === id ? data : el)
                     })
                 }
             })

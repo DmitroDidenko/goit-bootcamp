@@ -127,17 +127,24 @@
   Написать функцию, addUniqueNumbers(...), которая получает произвольное кол-во чисел как аргументы, и добавляет в
   массив uniqueNumbers только уникальные, а те которые в массиве уже есть игнорирует.
 */
-const uniqueNumbers  = [2, 1, 4, 9];
-function addUniqueNumbers() {
-}
-addUniqueNumbers(1, 2, 3);
-console.log(uniqueNumbers); // [2, 1, 4, 9, 3]
-
-addUniqueNumbers(12, 2, 3, 19);
-console.log(uniqueNumbers); // [2, 1, 4, 9, 3, 12, 19]
-
-addUniqueNumbers(4, 5, 12, 3, 1, 2, 8);
-console.log(uniqueNumbers); // [2, 1, 4, 9, 3, 12, 19, 5, 8]
+// const uniqueNumbers = [2, 1, 4, 9];
+//
+// const addUniqueNumbers = function (...args) {
+//     for (let el of args) {
+//        if(uniqueNumbers.includes(el) === false){
+//            uniqueNumbers.push(el);
+//        }
+//     }
+// };
+//
+// addUniqueNumbers(1, 2, 3);
+// console.log(uniqueNumbers); // [2, 1, 4, 9, 3]
+//
+// addUniqueNumbers(12, 2, 3, 19);
+// console.log(uniqueNumbers); // [2, 1, 4, 9, 3, 12, 19]
+//
+// addUniqueNumbers(4, 5, 12, 3, 1, 2, 8);
+// console.log(uniqueNumbers); // [2, 1, 4, 9, 3, 12, 19, 5, 8]
 
 // =====================================================================================================================
 // =================================================  Задача 8  ========================================================
@@ -147,9 +154,19 @@ console.log(uniqueNumbers); // [2, 1, 4, 9, 3, 12, 19, 5, 8]
   тоже чисел.
   Удалите все элементы из исходного массива, которые имеют такое же значение, что и аргументы.
 */
-
+// function removeFromArray(arr, ...args) {
+//     let a = [];
+//     for (let el of arr) {
+//         if(args.includes(el) === false) {
+//             a.push(el)
+//         }
+//     }
+//     return a
+// }
+//
 // console.log(removeFromArray([1, 2, 3, 4, 5], 2, 4)); // [1, 3, 5]
 // console.log(removeFromArray([12, 4, 3, 8, 17], 3, 29, 18, 4)); // [12, 8, 17]
 
 // =====================================================================================================================
+
 

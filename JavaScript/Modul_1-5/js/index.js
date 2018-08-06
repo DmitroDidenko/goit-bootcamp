@@ -1,4 +1,3 @@
-
 // ===============================  Prompt, alert, Переменные, if...else, switch  ======================================
 // let age = prompt('Сколько Вам полных лет?');
 // console.log('Ваш возраст:', age, 'лет');
@@ -478,12 +477,12 @@
 //     return result;
 // }
 
-// ;const igorevich = (base) => {
+// ;const rev = (base) => {
 //     if (base === 0) return 1;
-//     return base*igorevich(base-1);
+//     return base*rev(base-1);
 // };
 //
-// console.log(igorevich(6));
+// console.log(rev(6));
 
 // Написати ф-ю що приймає аргументом строку формата '160px' і вертає строку формата '10rem'
 // function rem(px) {
@@ -497,9 +496,9 @@
 // console.log(rem('8px')); // 0.5rem
 //
 // // написати ф-ю що приймає 2 параметра (розмір елемента і розмір контейнера) і повертає розмір елемента в %
-// function prc(box, conteiner) {
+// function prc(box, container) {
 //     let a = 100;
-//     return parseFloat(box) / parseFloat(conteiner) * a + '%'
+//     return parseFloat(box) / parseFloat(container) * a + '%'
 // }
 //
 // console.log(prc('160px', '1600px')); // 10%
@@ -609,7 +608,7 @@
 
 // =======================================  правильність написання кода for in  ========================================
 // const hotel = {
-//     name : "Resort Hotel",
+//     name: "Resort Hotel",
 //     stars: 5,
 //     capacity: 100,
 // };
@@ -621,14 +620,14 @@
 //     }
 // }
 // // console.log(hotel);
-
-
-//   const keys = Object.keys(hotel);
-//   const values = Object.values(hotel);
-//   const entries = Object.entries(hotel);
-//   console.log(keys);
-//   console.log(values);
-//   console.log(entries);
+//
+//
+// const k = Object.keys(hotel);
+// const val = Object.values(hotel);
+// const ent = Object.entries(hotel);
+// console.log(k);
+// console.log(val);
+// console.log(ent);
 
 
 // const hotel = {
@@ -641,8 +640,7 @@
 // let capacity = hotel.capacity;
 
 // const { name, stars, status ,capacity } = hotel;
-// console.log(name);
-//   // Объявим переменные и присвоим им значения из объекта
+// console.log(name);// Объявим переменные и присвоим им значения из объекта
 
 
 // const hotel = {
@@ -690,7 +688,6 @@
 
 
 // let numb = [5, 10, 20];
-
 // function showArrVal(arr) {
 //     console.log(arr[0]);
 //     console.log(arr[1]);
@@ -702,54 +699,8 @@
 //     console.log(b);
 //     console.log(c);
 // }
-
 // showArrVal(numb);
 
-
-/*
-  Напишите скрипт, который, для объекта user, последовательно:
-
-    - добавляет поле mood со значением 'happy'
-
-    - заменяет значение hobby на 'javascript'
-
-    - удаляет свойство premium
-
-    - выводит содержимое объекта user в формате ключ:значение
-      используя цикл for...in
-
-    - выводит содержимое объекта user в формате ключ:значение
-      используя Object.keys и for...of
-
-    - выводит содержимое объекта user в формате ключ:значение
-      используя Object.entries и for...of
-*/
-
-// const user = {
-//     name: "Mango",
-//     age: 20,
-//     hobby: "html",
-//     premium: true
-// };
-//
-// user.mood = 'happy';
-// console.log(user);
-// user.hobby = 'javascript';
-// delete user.premium;
-//
-// for(let key in user) {
-//     console.log(`${key}: ${user[key]}`)
-// }
-// let arrKeys = Object.keys(user);
-// console.log(arrKeys);
-// for (let keyName of arrKeys) {
-//     (`${keyName}: ${user[keyName]}`)
-// }
-// let objEnt = Object.entries(user);
-// console.log(objEnt);
-// for(let arrEntry of objEnt) {
-//     (`${arrEntry[0]}: ${arrEntry[1]}`)
-// }
 
 /*
   Напишите скрипт который определит и выведет в консоль

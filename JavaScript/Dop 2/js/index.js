@@ -192,17 +192,17 @@
     - Есл не содержит - выводим alert с сообщением 'Сожалеем, Вы не угадали!'.
 */
 
-const numbers = [12, 15, 25, 37, 41];
-let min = 12;
-let max = 41;
-let num = prompt("Введите цифру между 12 и 41");
-
-if (num < min || num > max || num === '') {
-    alert('Введено не число')
-} else if (numbers.includes(+num)) {
-    alert('Поздравляем, Вы угадали!')
-} else {
-    alert('Сожалеем, Вы не угадали!')
-}
+// const numbers = [12, 15, 25, 37, 41];
+// let min = 12;
+// let max = 41;
+// let num = prompt("Введите цифру между 12 и 41");
+//
+// if (num < min || num > max || num === '') {
+//     alert('Введено не число')
+// } else if (numbers.includes(+num)) {
+//     alert('Поздравляем, Вы угадали!')
+// } else {
+//     alert('Сожалеем, Вы не угадали!')
+// }
 
 
