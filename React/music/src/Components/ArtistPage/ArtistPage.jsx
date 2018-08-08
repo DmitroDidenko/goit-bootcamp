@@ -2,7 +2,7 @@ import React from 'react';
 import ArtistCard from '../ArtistCard/ArtistCard'
 import './ArtistPage.css'
 
-const ArtistPage = ({artistsData, addFavourite}) => {
+const ArtistPage = ({artistsData, addFavourite, handlerYoutube}) => {
     return (
         <div className='content'>
             {artistsData.map((el, index) => <ArtistCard
@@ -15,6 +15,7 @@ const ArtistPage = ({artistsData, addFavourite}) => {
                 type="favouriteArtist"
                 int='interestingArtist'
                 checkArr="artistsData"
+                handlerYoutube={handlerYoutube}
             />)}
         </div>
     );

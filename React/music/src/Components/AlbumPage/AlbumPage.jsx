@@ -2,7 +2,7 @@ import React from 'react';
 import ArtistCard from '../ArtistCard/ArtistCard';
 import '../ArtistPage/ArtistPage.css';
 
-const AlbumPage = ({albumData, addFavourite}) => {
+const AlbumPage = ({albumData, addFavourite, handlerYoutube}) => {
     return (
         <div className='content'>
             {albumData.map((el, index) => <ArtistCard
@@ -14,7 +14,9 @@ const AlbumPage = ({albumData, addFavourite}) => {
                 int='interestingAlbum'
                 index={index}
                 checkArr='albumData'
-                addFavourite={addFavourite}/>)}
+                handlerYoutube={handlerYoutube}
+                addFavourite={addFavourite}
+            />)}
         </div>
     );
 };

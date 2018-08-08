@@ -7,7 +7,7 @@ import Search from '../Components/Search/Search';
 import ArtistPage from '../Components/ArtistPage/ArtistPage';
 import SongPage from "../Components/SongPage/SongPage";
 import AlbumPage from "../Components/AlbumPage/AlbumPage";
-import {fetchData, getLocal} from "../fetch";
+import {fetchData, getLocal, youtubeFetch} from "../fetch";
 
 class App extends Component {
     state = {
@@ -22,6 +22,9 @@ class App extends Component {
         interestingArtist: [],
         interestingAlbum: [],
         interestingSong: [],
+        yuuTubeOpen: false,
+        videoID: '',
+        sidebarShow: false,
     };
 
     componentDidMount() {
@@ -77,13 +80,36 @@ class App extends Component {
             });
     };
 
+    handlerYoutube = ({target}) => {
+        if (target.className === 'close') {
+            this.setState({
+                yuuTubeOpen: false,
+            })
+        } else {
+            const query = target.dataset.query;
+            youtubeFetch(query)
+                .then(data => {
+                    this.setState({
+                        yuuTubeOpen: true,
+                        videoID: data,
+                    })
+                })
+        }
+    };
+
+    sidebarChange = () => {
+            this.setState(prev => ({
+                sidebarShow: !prev.sidebarShow
+            }))
+    };
+
     addFavourite = ({target}) => {
         const index = target.dataset.index;
         const arrForAdd = target.dataset.arrForAdd;
         const check = target.dataset.check;
         const curentItem = this.state[check][index];
         if (!this.state[arrForAdd].includes(curentItem)) {
-            this.setState((prev,) => ({
+            this.setState(prev => ({
                 [arrForAdd]: [curentItem, ...prev[arrForAdd]]
             }), () => {
                 localStorage.setItem(`${arrForAdd}`, JSON.stringify(this.state[arrForAdd]))
@@ -99,9 +125,16 @@ class App extends Component {
         return (
             <div className='wrapper'>
                 <div className="container">
-                    <Sidebar/>
+                    <Sidebar sidebarShow={this.state.sidebarShow}/>
                     <main className="main">
-                        <Search value={searchValue} onChange={this.inputChange} searchData={this.searchData}/>
+                        <Search value={searchValue}
+                                onChange={this.inputChange}
+                                searchData={this.searchData}
+                                youtube={this.handlerYoutube}
+                                YuuTubeOpen={this.state.yuuTubeOpen}
+                                videoId={this.state.videoID}
+                                sidebarChange={this.sidebarChange}
+                        />
                         {isLoading ? <div className='loader'>
                                 <Loader
                                     type="ThreeDots"
@@ -114,13 +147,16 @@ class App extends Component {
                                 <Switch>
                                     <Route exact path='/' render={() => <ArtistPage
                                         artistsData={artistsData}
-                                        addFavourite={this.addFavourite}/>}/>
+                                        addFavourite={this.addFavourite}
+                                        handlerYoutube={this.handlerYoutube}/>}/>
                                     <Route path='/album' render={() => <AlbumPage
                                         albumData={albumData}
-                                        addFavourite={this.addFavourite}/>}/>
+                                        addFavourite={this.addFavourite}
+                                        handlerYoutube={this.handlerYoutube}/>}/>
                                     <Route path='/songs' render={() => <SongPage
                                         songsData={songsData}
-                                        addFavourite={this.addFavourite}/>}/>
+                                        addFavourite={this.addFavourite}
+                                        handlerYoutube={this.handlerYoutube}/>}/>
 
                                     <Route exact path='/FavouritesArtist' render={() => <ArtistPage
                                         artistsData={favouriteArtist}/>}/>

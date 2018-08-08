@@ -2,7 +2,7 @@ import React from 'react';
 import SongCard from '../SongCard/SongCard'
 import './SongPage.css'
 
-const SongPage = ({songsData, addFavourite}) => {
+const SongPage = ({songsData, addFavourite, handlerYoutube}) => {
     return (
         <div className='content'>
             {songsData.map((el,index) => <SongCard
@@ -14,6 +14,7 @@ const SongPage = ({songsData, addFavourite}) => {
                 int='interestingSong'
                 index={index}
                 checkArr='songsData'
+                handlerYoutube={handlerYoutube}
                 addFavourite={addFavourite}
             />)}
         </div>

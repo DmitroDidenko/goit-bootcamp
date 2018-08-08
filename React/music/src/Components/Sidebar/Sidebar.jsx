@@ -4,9 +4,9 @@ import Menu from "../Menu/Menu";
 
 import './Sidebar.css'
 
-const Sidebar = () => {
+const Sidebar = ({sidebarShow}) => {
     return (
-        <aside className="aside">
+        <aside className={sidebarShow ? 'aside aside-show' : 'aside'}>
             <Logo/>
             <Menu menu={[
                 {text: "Main", link: '#', submenu: false},
