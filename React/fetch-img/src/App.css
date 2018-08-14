@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+  width: 60rem;
+  margin: auto;
+}
+
+.form{
+  padding-top: 10rem;
+  display: flex;
+  width: 50%;
+  margin: auto;
+}
+
+.inp{
+  flex-basis: 70%;
+  padding: 1rem;
+}
+
+.btn{
+  flex-basis: 30%;
+  padding: 1rem;
+}

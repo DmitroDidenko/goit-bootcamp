@@ -57,7 +57,6 @@ class App extends Component {
     };
 
     deleteItem = (id) => {
-
         axios.delete(`/tasks/${id}`)
             .then(({status}) => {
                 if (status === 200) {
@@ -74,7 +73,6 @@ class App extends Component {
     };
 
     updateItem = (id, word) => {
-
         const task = this.state.items.find(el => el.id === id);
         axios.put(`/tasks/${id}`, {...task, text: word})                            // варіант 2
             .then(({status, data}) => {

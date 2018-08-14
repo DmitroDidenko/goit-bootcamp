@@ -1,0 +1,10 @@
+.li {
+    padding: 1rem;
+    width: 18rem;
+    list-style: none;
+    margin: auto;
+    border: 0.5rem solid #278;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
