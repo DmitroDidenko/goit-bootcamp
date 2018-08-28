@@ -7,12 +7,10 @@ const ProtectedRoute = ({component: Component, authed, ...rest}) => {
             {...rest}
             render={(props) => authed
                 ? <Component {...props} />
-                : <Redirect to={
-                    {
-                        pathname: '/login',
-                        state: {from: props.location}
-                    }
-                }/>}/>
+                : <Redirect to={{
+                    pathname: '/login',
+                    state: {from: props.location}
+                }}/>}/>
     )
 };
 

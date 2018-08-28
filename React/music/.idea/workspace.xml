@@ -18,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/src/Components/Submenu/Submenu.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+              <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -26,74 +26,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sidebar.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Components/Sidebar/Sidebar.jsx">
+      <file leaf-file-name="Youtube.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/Youtube/Youtube.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Search.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Components/Search/Search.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="82" lean-forward="false" selection-start-line="6" selection-start-column="82" selection-end-line="6" selection-end-column="82" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Menu.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Components/Menu/Menu.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Chart.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Components/Chart/Chart.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArtistPage.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Components/ArtistPage/ArtistPage.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SongPage.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Components/SongPage/SongPage.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -181,63 +119,119 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="462c0819:PsiDirectoryNode" />
+              <item name="Music" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Music" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="462c0819:PsiDirectoryNode" />
+              <item name="Music" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Music" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="462c0819:PsiDirectoryNode" />
+              <item name="Music" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Music" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="462c0819:PsiDirectoryNode" />
+              <item name="Music" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Music" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+              <item name="AlbumPage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Music" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Music" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Components" type="462c0819:PsiDirectoryNode" />
               <item name="ArtistCard" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="462c0819:PsiDirectoryNode" />
+              <item name="Music" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Music" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Components" type="462c0819:PsiDirectoryNode" />
               <item name="ArtistPage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="462c0819:PsiDirectoryNode" />
+              <item name="Music" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Music" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Components" type="462c0819:PsiDirectoryNode" />
               <item name="Chart" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music" type="462c0819:PsiDirectoryNode" />
+              <item name="Music" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Music" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+              <item name="Logo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Music" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Music" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+              <item name="Menu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Music" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Music" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+              <item name="Search" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Music" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Music" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+              <item name="Sidebar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Music" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Music" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+              <item name="SongCard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Music" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Music" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+              <item name="SongPage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Music" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Music" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Components" type="462c0819:PsiDirectoryNode" />
               <item name="Submenu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Music" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Music" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+              <item name="Youtube" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../to-do-list" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Fetch-Img" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -289,11 +283,13 @@
       <workItem from="1533663790045" duration="865000" />
       <workItem from="1533709798934" duration="5287000" />
       <workItem from="1533734000682" duration="817000" />
+      <workItem from="1534916316591" duration="552000" />
+      <workItem from="1534968137437" duration="265000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129503000" />
+    <option name="totallyTimeSpent" value="130320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -547,13 +543,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/ArtistCard/ArtistCard.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="56" column="17" lean-forward="true" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/Logo/Logo.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -564,13 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/ArtistCard/ArtistCard.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/SongCard/SongCard.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -578,21 +560,6 @@
           <folding>
             <element signature="e#0#26#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Youtube/Youtube.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/AlbumPage/AlbumPage.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="4" column="59" lean-forward="false" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -610,36 +577,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fetch.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <marker date="1533712988447" expanded="true" signature="3770:3902" ph="..." />
-            <marker date="1533712988447" expanded="true" signature="4731:7883" ph="..." />
-            <marker date="1533712988447" expanded="true" signature="4775:7864" ph="..." />
-            <marker date="1533712988447" expanded="true" signature="4887:7841" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plan.text">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plan.text" />
     <entry file="file://$PROJECT_DIR$/src/Components/Search/Search.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="454">
@@ -650,18 +588,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/SongPage/SongPage.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+        <state relative-caret-position="425">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/ArtistCard/ArtistCard.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/AlbumPage/AlbumPage.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="4" column="59" lean-forward="false" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/ArtistCard/ArtistCard.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="56" column="17" lean-forward="false" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/ArtistPage/ArtistPage.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -671,7 +633,7 @@
     <entry file="file://$PROJECT_DIR$/src/Components/Chart/Chart.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -681,7 +643,7 @@
     <entry file="file://$PROJECT_DIR$/src/Components/Menu/Menu.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -708,10 +670,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/fetch.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <marker date="1533712988447" expanded="true" signature="3770:3902" ph="..." />
+            <marker date="1533712988447" expanded="true" signature="4731:7883" ph="..." />
+            <marker date="1533712988447" expanded="true" signature="4775:7864" ph="..." />
+            <marker date="1533712988447" expanded="true" signature="4887:7841" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Youtube/Youtube.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/Submenu/Submenu.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
