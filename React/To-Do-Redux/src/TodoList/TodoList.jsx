@@ -18,9 +18,6 @@ class TodoList extends Component {
                     />
                     <input type="submit" className='inp'/>
                 </form>
-                <ul>
-
-                </ul>
             </div>
         );
     }

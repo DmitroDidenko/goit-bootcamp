@@ -28,28 +28,28 @@
 //     }
 // });
 
-// ===================================== як отримати результат і пеетворити його ======================================
-// const promiseNames = new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//         resolve(['Homer', 'Bender', 'Filip']);
-//     }, 1000);
-//
-//     setTimeout(() => {
-//         reject("no data back from server, there was an error")
-//     }, 3000);
-// });
+// ===================================== як отримати результат і перетворити його ======================================
+const promiseNames = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve(['Homer', 'Bender', 'Filip']);
+    }, 1000);
 
-// promiseNames
-// .then(answer => {
-//     let result = answer.map(el => el.toUpperCase());
-//     return result
-// })
-// .then(result => {
-//     for (let el of result) {
-//         console.log(el);
-//     }
-// })
-// .catch(error => console.log(error));
+    setTimeout(() => {
+        reject("no data back from server, there was an error")
+    }, 3000);
+});
+
+promiseNames
+.then(answer => {
+    let result = answer.map(el => el.toUpperCase());
+    return result
+})
+.then(result => {
+    for (let el of result) {
+        console.log(el);
+    }
+})
+.catch(error => console.log(error));
 
 // ===================================== Promise all ======================================
 // const promiseNames = new Promise((resolve, reject) => {

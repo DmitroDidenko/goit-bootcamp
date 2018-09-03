@@ -105,33 +105,33 @@
 // }
 // ====================================================================================================================
 // =================================================  задача Gallery  =================================================
-// let btn = document.querySelector('.btn');
-// let galleryContainer = document.querySelector('#container');
-//
-// function getValue() {
-//     let input = document.querySelector('.cars').value;
-//     let url = `https://pixabay.com/api/?key=5018958-ed49ccd90878e6614abdf24a6&q=${input}&per_page=9`;
-//     fetch(url)
-//     // .then(response => response.ok ? response.json(): null)       // стрелочний варіант
-//         .then(response => {
-//             if (response.ok) {
-//                 return response.json()
-//             }
-//         })
-//         .then(data => data.hits)
-//         .then(galleryArr => galleryCreate(galleryArr, galleryContainer));
-//     document.querySelector('.cars').value = ''
-// }
-//
-// function galleryCreate(arr, container) {
-//     let result = arr.reduce((acc, el) => acc + `<div class="one"><p>Photographer is${el.user} </p><img src=${el.webformatURL}></div>`, '')
-//     container.innerHTML = result
-// }
-//
-// btn.addEventListener('click', getValue);
-// window.addEventListener('keypress', function (e) {
-//     if (e.key === 'Enter') {
-//         getValue();
-//     }
-// });
+let btn = document.querySelector('.btn');
+let galleryContainer = document.querySelector('#container');
+
+function getValue() {
+    let input = document.querySelector('.cars').value;
+    let url = `https://pixabay.com/api/?key=5018958-ed49ccd90878e6614abdf24a6&q=${input}&per_page=9`;
+    fetch(url)
+    // .then(response => response.ok ? response.json(): null)       // стрелочний варіант
+        .then(response => {
+            if (response.ok) {
+                return response.json()
+            }
+        })
+        .then(data => data.hits)
+        .then(galleryArr => galleryCreate(galleryArr, galleryContainer));
+    document.querySelector('.cars').value = ''
+}
+
+function galleryCreate(arr, container) {
+    let result = arr.reduce((acc, el) => acc + `<div class="one"><p>Photographer is${el.user} </p><img src=${el.webformatURL}></div>`, '')
+    container.innerHTML = result
+}
+
+btn.addEventListener('click', getValue);
+window.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        getValue();
+    }
+});
 // ====================================================================================================================
