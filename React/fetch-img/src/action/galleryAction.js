@@ -15,6 +15,5 @@ function getGallery() {
 }
 
 export const galleryAsync = () => dispatch => {
-    getGallery()
-        .then(result => dispatch(add(result.data.hits)))
+    getGallery().then(result => dispatch(add(result.data.hits)))
 };

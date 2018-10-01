@@ -95,7 +95,7 @@ class App extends Component {
     render() {
         return (
             <div className={styles.todoListMain}>
-                <div>
+                <div className='d'>
                     <form onSubmit={this.addItem}>
                         <input
                             placeholder='enter task'

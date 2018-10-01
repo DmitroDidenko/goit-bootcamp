@@ -18,7 +18,10 @@ const Line = ({data, match}) => {
             <Route>
                 <div className='line'>
                     {data.map(el => <NavLink to={`${match.path}/${el.lastname}`} key={el.id}>
-                            <Card name={el.name} lastname={el.lastname} number={el.number} photo={el.photo}
+                            <Card name={el.name}
+                                  lastname={el.lastname}
+                                  number={el.number}
+                                  photo={el.photo}
                                   country={el.country}/>
                         </NavLink>
                     )}

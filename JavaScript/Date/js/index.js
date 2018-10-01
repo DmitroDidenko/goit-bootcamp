@@ -57,6 +57,7 @@ let secText = document.querySelector('.seconds');
 let minText = document.querySelector('.minutes');
 let hoursText = document.querySelector('.hours');
 let dayText = document.querySelector('.days');
+
 function timer() {
     const today = new Date();  // at that moment
     let result = deadline - today;
@@ -64,10 +65,10 @@ function timer() {
     let min = Math.floor(result / 60000 % 60);
     let hour = Math.floor(result / 3600000 % 24);
     let day = Math.floor(result / 86400000);
-    secText.textContent = sec < 10 ? `0${sec}`: sec;
-    minText.textContent = min < 10 ? `0${min}`: min;
-    hoursText.textContent = hour < 10 ? `0${hour}`: hour;
-    dayText.textContent = day < 10 ? `0${day}`: day;
+    secText.textContent = sec < 10 ? `0${sec}` : sec;
+    minText.textContent = min < 10 ? `0${min}` : min;
+    hoursText.textContent = hour < 10 ? `0${hour}` : hour;
+    dayText.textContent = day < 10 ? `0${day}` : day;
 }
 
 setInterval(timer, 1000);
