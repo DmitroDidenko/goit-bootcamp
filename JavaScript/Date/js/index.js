@@ -52,7 +52,7 @@
 // console.log(now);          // - щоб зрозуміти принцип роботи потрібно прочитати документацію по використанню
 
 // ==================================================  Таймер  ===================================================
-const deadline = new Date(2019, 0, 1, 0, 0, 0);  //deadline
+const deadline = new Date(2020, 0, 1, 0, 0, 0);  //deadline
 let secText = document.querySelector('.seconds');
 let minText = document.querySelector('.minutes');
 let hoursText = document.querySelector('.hours');

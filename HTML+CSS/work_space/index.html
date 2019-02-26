@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>work-space</title>
+</head>
+<body>
+
+
+// гра Шибениця
+<script>
+
+    var people = ["Dima", "Petr", "Vika"];
+    var word = people[Math.floor(Math.random() * people.length)];
+    var arr = [];
+    var name = word.length;
+    for (var i = 0; i < word.length; i++) {
+        arr[i] = "_";
+    }
+    while (name > 0) {
+        alert(arr.join(" "));
+        var play = prompt("давай пограємо, вибери буквочу . щоб вгадати слово");
+        if (play === null) {
+            break;
+        } else if (play.length !== 1) {
+            alert("так не чесно. введи одну букву");
+        } else {
+            for (var j = 0; j < word.length; j++) {
+                if (word[j] === play) {
+                    arr[j] = play;
+                    name--;
+                }
+            }
+        }
+    }
+    alert(arr.join(" "));
+    alert("Хороша робота, давай ще!");
+
+</script>
+
+</body>
+</html>
