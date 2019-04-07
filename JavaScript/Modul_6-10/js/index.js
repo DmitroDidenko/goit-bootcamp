@@ -986,7 +986,7 @@
 
 // function withRemoveListener() {
 //     alert(`I am action from first button and i remove after end`);
-//     one.removeEventListener('click', withRemoveListener);                    // мщжна сразу же после выполнения прикратить работу функии
+//     one.removeEventListener('click', withRemoveListener);                    // можна сразу же после выполнения прикратить работу функии
 // }
 // one.addEventListener('click', withRemoveListener);
 

@@ -990,10 +990,10 @@
 // console.log(multiplyBy(4, [1, 2, 3, 4, 5])); // [4, 8, 12, 16, 20]
 
 /*
-  Функция summAllNumbers принимает любое число аргументов.
+  Функция sumAllNumbers принимает любое число аргументов.
   Возвращает число - сумму всех аргументов.
 */
-// // function summAllNumbers(...args) {
+// // function sumAllNumbers(...args) {
 // //     let accumulator = 0;
 // //
 // //     for (let i = 0, max = args.length; i < max; i += 1) {
@@ -1002,10 +1002,10 @@
 // //
 // //     return accumulator;
 // // }
-// const summAllNumbers = (...args) => args.reduce((acc, item) => acc+item,0);                 //НОВЫЙ ВАРИАНТ
-// console.log(summAllNumbers(1, 2, 3)); // 6
-// console.log(summAllNumbers(1, 2, 3, 4)); // 10
-// console.log(summAllNumbers(1, 2, 3, 4, 5)); // 15
+// const sumAllNumbers = (...args) => args.reduce((acc, item) => acc+item,0);                 //НОВЫЙ ВАРИАНТ
+// console.log(sumAllNumbers(1, 2, 3)); // 6
+// console.log(sumAllNumbers(1, 2, 3, 4)); // 10
+// console.log(sumAllNumbers(1, 2, 3, 4, 5)); // 15
 
 /*
   Функция findEvery получает два аргумента - число и массив.
